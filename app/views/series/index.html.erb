@@ -1,2 +1,15 @@
-<h1>Series#index</h1>
-<p>Find me in app/views/series/index.html.erb</p>
+<h1>Series</h1>
+
+<% @serie.each do |s| %>
+    <h4><%= s.title %></h4>
+    <p><%= s.original_title %></p>
+    <p><%= s.director %></p>
+    <p><%= s.year %></p>
+    <p><%= s.country %></p>
+    <p><%= s.duration %></p>
+    <p><%= s.sinopsis %></p>
+<% end%>
+
+<%= @movie.count %>
+<br>
+<%= link_to "Agregar una nueva pelicula", series_new_path %>

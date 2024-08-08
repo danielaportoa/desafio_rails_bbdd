@@ -3,27 +3,31 @@
 <%= form_with model: @movie, method: :post do |form| %>
     <div class="col-4">
         <div>
-            <%= form.label :title, "Movie Title", class: "form-label" %>
+            <%= form.label :title, "Title", class: "form-label" %>
             <%= form.text_field :title, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :title_original, "Movie title_original", class: "form-label"%>
+            <%= form.label :title_original, "Title original", class: "form-label"%>
             <%= form.text_field :title_original, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :director, "Movie director", class: "form-label"%>
+            <%= form.label :director, "Director", class: "form-label"%>
             <%= form.text_field :director, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :year, "Movie year", class: "form-label"%>
+            <%= form.label :year, "Year", class: "form-label"%>
             <%= form.text_field :year, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :country, "Movie country", class: "form-label"%>
+            <%= form.label :country, "Country", class: "form-label"%>
             <%= form.text_field :country, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :duration, "Movie duration", class: "form-label"%>
+            <%= form.label :duration, "Duration", class: "form-label"%>
+            <%= form.text_field :duration, class: "form-control" %>
+        </div>
+        <div>
+            <%= form.label :sinopsis, "Sinopsis", class: "form-label"%>
             <%= form.text_field :duration, class: "form-control" %>
         </div>
         <div>

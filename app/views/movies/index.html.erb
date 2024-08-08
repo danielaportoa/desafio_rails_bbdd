@@ -7,8 +7,9 @@
     <p><%= m.year %></p>
     <p><%= m.country %></p>
     <p><%= m.duration %></p>
+    <p><%= m.sinopsis %></p>
 <% end%>
 
 <%= @movie.count %>
 <br>
-<%= link_to "Agregar una nueva pelicula", movie_new_path %>
+<%= link_to "Agregar una nueva pelicula", movies_new_path %>

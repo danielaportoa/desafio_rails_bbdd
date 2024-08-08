@@ -16,7 +16,7 @@ class SeriesController < ApplicationController
 private
 
   def serie_params
-    params.require(:serie).permit(:title, :original_title, :season, :director, :year, :country, :duration)
+    params.require(:serie).permit(:title, :original_title, :season, :director, :year, :country, :sinopsis :duration)
   end
 
   def new
