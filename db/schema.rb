@@ -15,19 +15,38 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_08_170520) do
   enable_extension "plpgsql"
 
   create_table "documentaryfilms", force: :cascade do |t|
+    t.string "title"
+    t.string "original_title"
+    t.string "director"
+    t.string "year"
+    t.string "country"
+    t.string "duration"
+    t.string "sinopsis"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "movies", force: :cascade do |t|
-    t.string "serie"
-    t.string "documentaryfilm"
+    t.string "title"
+    t.string "original_title"
+    t.string "director"
+    t.string "year"
+    t.string "country"
+    t.string "duration"
+    t.string "sinopsis"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "series", force: :cascade do |t|
-    t.string "documentaryfilm"
+    t.string "title"
+    t.string "original_title"
+    t.string "season"
+    t.string "director"
+    t.string "year"
+    t.string "country"
+    t.string "duration"
+    t.string "sinopsis"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
