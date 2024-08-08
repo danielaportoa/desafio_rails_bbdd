@@ -3,31 +3,35 @@
 <%= form_with model: @post, method: :post do |form| %>
     <div class="col-4">
         <div>
-            <%= form.label :title, "Post Title", class: "form-label" %>
+            <%= form.label :title, "Title", class: "form-label" %>
             <%= form.text_field :title, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :title_original, "Post title_original", class: "form-label"%>
+            <%= form.label :title_original, "Title original", class: "form-label"%>
             <%= form.text_field :title_original, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :director, "Post director", class: "form-label"%>
+            <%= form.label :director, "Director", class: "form-label"%>
             <%= form.text_field :director, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :year, "Post year", class: "form-label"%>
+            <%= form.label :year, "Year", class: "form-label"%>
             <%= form.text_field :year, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :country, "Post country", class: "form-label"%>
+            <%= form.label :country, "Country", class: "form-label"%>
             <%= form.text_field :country, class: "form-control" %>
         </div>
         <div>
-            <%= form.label :duration, "Post duration", class: "form-label"%>
+            <%= form.label :duration, "Duration", class: "form-label"%>
             <%= form.text_field :duration, class: "form-control" %>
         </div>
         <div>
-            <%= form.submit "Submit", class: "btn btn-primary" %>
+            <%= form.label :sinopsis, "Sinopsis", class: "form-label"%>
+            <%= form.text_field :duration, class: "form-control" %>
+        </div>
+        <div>
+            <%= form.submit "Enviar", class: "btn btn-primary" %>
         </div>
     </div>
 <% end %>
