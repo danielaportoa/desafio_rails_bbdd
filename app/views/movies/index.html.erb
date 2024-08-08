@@ -1,0 +1,14 @@
+<h1>Movies</h1>
+
+<% @movie.each do |m| %>
+    <h4><%= m.title %></h4>
+    <p><%= m.original_title %></p>
+    <p><%= m.director %></p>
+    <p><%= m.year %></p>
+    <p><%= m.country %></p>
+    <p><%= m.duration %></p>
+<% end%>
+
+<%= @movie.count %>
+<br>
+<%= link_to "Agregar una nueva pelicula", movie_new_path %>
